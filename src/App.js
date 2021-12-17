@@ -18,7 +18,8 @@ function App(){
   
   // Set token saved in browser as react hook
   const [token, setToken] = useState(getToken());
-  const backendUrl = "http://127.0.0.1:8000/";
+  //const backendUrl = "http://127.0.0.1:8000/";
+  const backendUrl = "https://save-my-files.herokuapp.com/";
 
   // Function called when user signs in successfully
   const saveToken = (userToken) => {
