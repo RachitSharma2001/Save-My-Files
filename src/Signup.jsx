@@ -4,6 +4,7 @@ import Button from 'react-bootstrap/Button';
 import {withRouter} from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { contains } from 'jquery';
+import './Signup.css';
 
 export default function SignUp(props) {
     
