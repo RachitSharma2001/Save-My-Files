@@ -42,8 +42,8 @@ function App(){
     return (<div className="PublicView"> 
       <Router> 
         <PublicNav/>
-        <Route path="/Save-My-Files/signup"> <Signup url={backendUrl}/> </Route>
-        <Route path="/Save-My-Files/home"> <Login givenUrl={backendUrl} saveTokenFunc={saveToken}/> </Route>
+        <Route path="/signup"> <Signup url={backendUrl}/> </Route>
+        <Route path="/home"> <Login givenUrl={backendUrl} saveTokenFunc={saveToken}/> </Route>
       </Router>
     </div>);
   }
@@ -52,9 +52,9 @@ function App(){
     <div className="UserView">
       <Router>
         <PrivateNav/>
-        <Route path="/Save-My-Files/home"> <Home userId={getToken()}/> </Route>
-        <Route path="/Save-My-Files/help"> <Help/> </Route>
-        <Route path="/Save-My-Files/signout"> <Signout clearToken={clearToken}/> </Route>
+        <Route path="/home"> <Home userId={getToken()} givenUrl={backendUrl}/> </Route>
+        <Route path="/help"> <Help/> </Route>
+        <Route path="/signout"> <Signout clearToken={clearToken}/> </Route>
       </Router>
     </div>
   )

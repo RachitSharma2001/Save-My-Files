@@ -39,8 +39,8 @@ function getDirPath(newDir, givenDirPath){
 }
 export default function Home(props){
     const userId = props.userId;
+    const backend_url = props.givenUrl;
     const [cmdList, changeCmdList] = useState([]);
-    const backend_url = "http://127.0.0.1:8000/";
     const [currDirPath, setCurrDirPath] = useState('C:');
     const [subdirList, setSubdirList] = useState(['home']);
     const [fileList, setFileList] = useState([]);
