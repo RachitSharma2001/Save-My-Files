@@ -1,5 +1,6 @@
 import { React, useState } from 'react';
 import { BrowserRouter as Router, Redirect, Route, Switch } from 'react-router-dom';
+import About from './About.jsx';
 import Home from './Home.jsx';
 import Signup from './Signup.jsx';
 import Login from './Login.jsx';
@@ -44,6 +45,7 @@ function App(){
         <PublicNav/>
         <Route path="/signup"> <Signup url={backendUrl}/> </Route>
         <Route path="/home"> <Login givenUrl={backendUrl} saveTokenFunc={saveToken}/> </Route>
+        <Route path="/about"> <About/> </Route>
       </Router>
     </div>);
   }

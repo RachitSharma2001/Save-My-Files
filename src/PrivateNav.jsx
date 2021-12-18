@@ -6,21 +6,11 @@ function PrivateNav(props) {
     <div className="navigation">
       <nav class="navbar navbar-expand navbar-dark bg-dark">
         <div class="container">
-          <Link class="navbar-brand" to="/">
-            Save My Files
+          <Link class="navbar-brand" to="/home">
+            My Files
           </Link>
-
           <div>
             <ul class="navbar-nav ml-auto">
-              <li
-                class={`nav-item  ${
-                  props.location.pathname === "/home" ? "active" : ""
-                }`}
-              >
-                <Link class="nav-link" to="/home">
-                  My Files
-                </Link>
-              </li>
               <li
                 class={`nav-item  ${
                   props.location.pathname === "/help" ? "active" : ""
